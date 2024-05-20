@@ -4,21 +4,30 @@ import Jumbotron from "./Jumbotron";
 import Card from "./Card";
 import Footer from "./Footer";
 
-//create your first component
 const Home = () => {
-	return (
-		<>
-			<NavBar />
-			<Jumbotron />
-			<div className="d-flex justify-content-evenly">
-				<Card />
-				<Card />
-				<Card />
-				<Card />
-			</div>
-			<Footer />
-		</>
-	);
+    return (
+        <>
+            <NavBar />
+            <Jumbotron />
+            <div className="container">
+                <div className="row justify-content-evenly">
+                    <div className="col-md-6 col-lg-3">
+                        <Card />
+                    </div>
+                    <div className="col-md-6 col-lg-3">
+                        <Card />
+                    </div>
+                    <div className="col-md-6 col-lg-3">
+                        <Card />
+                    </div>
+                    <div className="col-md-6 col-lg-3">
+                        <Card />
+                    </div>
+                </div>
+            </div>
+            <Footer />
+        </>
+    );
 };
 
 export default Home;
